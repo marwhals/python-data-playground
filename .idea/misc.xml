@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.8 (python-data-science-reference)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (python-data-playground)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (web-assistant)" project-jdk-type="Python SDK" />
 </project>

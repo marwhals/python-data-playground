@@ -1,4 +1,4 @@
-import tensorflow as tf # Needs specific python version ¯\_(ツ)_/¯
+import tensorflow as tf  # Needs specific python version
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -37,7 +37,7 @@ def train(model, inputs, outputs, learning_rate):
 
 # Train the model
 for epoch in range(10):
-    train(model, X, Y, 0.1)
+    train(model, X, Y, 0.425)
 
 # Predict Y
 Y_pred = model(X)
