@@ -1,7 +1,4 @@
-try:
-    import torch
-except ImportError:
-    print("You need to install Pytorch to run this script")
+import torch
 
 # Create tensors with requires_grad=True to track computation
 x = torch.tensor(3.0, requires_grad=True)
