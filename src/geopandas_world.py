@@ -30,6 +30,6 @@ intersecting.plot(ax=ax, color='red')
 plt.title("Features Intersecting with Buffer Zone")
 
 # Save the figure as a PNG
-output_path = "buffer_intersections.png"
+output_path = "pretty-pictures/buffer_intersections.png"
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
 print(f"Plot saved to {output_path}")

@@ -1,0 +1,15 @@
+matplotlib~=3.7.5
+requests~=2.32.3
+pandas~=1.5.3 #Needs to be downloaded for Seaborn
+numpy~=1.24.3
+dash~=3.0.3
+plotly~=6.0.1
+flask~=3.0.3
+keras~=2.13.1
+sympy~=1.13.3
+torch~=2.4.1
+geopandas~=0.13.2
+shapely~=2.0.7
+tensorflow~=2.13.0
+scikit-learn~=1.3.2
+seaborn~=0.12.2
