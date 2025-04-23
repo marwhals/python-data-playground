@@ -121,3 +121,5 @@ out/
 
 # Mackup Configuration
 .Mackup.cfg
+
+*.ps1
