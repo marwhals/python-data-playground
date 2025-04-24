@@ -1,6 +1,3 @@
-# Navigate to your project directory (change this if needed)
-cd "C:\Users\Marjan\Documents\Python Code\python-data-playground"
-
 # Remove the existing virtual environment if it exists
 Remove-Item -Recurse -Force .venv
 
