@@ -23,3 +23,4 @@ aiohttp~=3.10.11
 tqdm~=4.67.1
 beautifulsoup4~=4.13.4
 yfinance~=0.2.56
+pillow~=10.4.0
