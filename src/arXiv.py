@@ -11,9 +11,12 @@ PDF_DIR = os.path.join(BASE_DIR, "downloads")
 TAR_DIR = os.path.join(BASE_DIR, "tarballs")
 TEX_DIR = os.path.join(BASE_DIR, "tex_sources")
 
-async def fetch_latest_papers(search_query="computational finance", max_results=10):
+async def fetch_latest_papers(search_query="survey OR overview OR review", category="q-fin.CP", max_results=10):
     base_url = "http://export.arxiv.org/api/query?"
-    query = f"search_query=all:{search_query}&sortBy=submittedDate&sortOrder=descending&start=0&max_results={max_results}"
+    query = (
+        f"search_query=cat:{category}+AND+(ti:{search_query}+OR+abs:{search_query})"
+        f"&sortBy=submittedDate&sortOrder=descending&start=0&max_results={max_results}"
+    )
 
     async with aiohttp.ClientSession() as session:
         async with session.get(base_url + query) as response:
@@ -40,6 +43,7 @@ async def fetch_latest_papers(search_query="computational finance", max_results=
                 papers.append(paper)
 
             return papers
+
 
 async def download_file(session, url, filename, folder, desc="Downloading"):
     os.makedirs(folder, exist_ok=True)
