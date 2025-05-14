@@ -6,7 +6,7 @@ import tarfile
 from tqdm.asyncio import tqdm
 
 # Constants for folder paths
-BASE_DIR = "arXiv_output"
+BASE_DIR = "../arXiv_output"
 PDF_DIR = os.path.join(BASE_DIR, "downloads")
 TAR_DIR = os.path.join(BASE_DIR, "tarballs")
 TEX_DIR = os.path.join(BASE_DIR, "tex_sources")
